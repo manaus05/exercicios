@@ -11,8 +11,8 @@ else:
         print('a equação não possui valores reais')
     else:
         x = (b*b-4*a*c)
-        y = float((-b+x*o.5)/2*a)
-        z = float((-b-x*o.5)/2*a)
+        y = float((-b+x*0.5)/2*a)
+        z = float((-b-x*0.5)/2*a)
 
         if y != 0 and z != 0: print(f'a raiz 1 é {y} e a raiz 2 é {z}')
         elif y == 0: print(f'a equação so possui uma raiz {z}')
