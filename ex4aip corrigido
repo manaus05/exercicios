@@ -1,0 +1,92 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyOg7YMhxcTZKdlnUuR4oFa1",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/manaus05/exercicios/blob/main/ex4aip%20corrigido\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": 12,
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "nghVQwTsEFdE",
+        "outputId": "53117fc4-cda2-4e4d-f216-6edd8570bf38"
+      },
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "calculadora de raizesn de equação de segundo grau\n",
+            "insira os valores da sua equação\n",
+            "valor de a: 1\n",
+            "valor de b: 2\n",
+            "valor de c-15\n",
+            "o valor da raiz 1 é 3.0 e p valor da raiz 2 é -5.0\n"
+          ]
+        }
+      ],
+      "source": [
+        "#• Escreva um programa em Python, usando o Colab, que calcule as raízes de\n",
+        "#uma equação do segundo grau, na forma .\n",
+        "#O programa deve pedir os valores de a, b e c e fazer as consistências,\n",
+        "#informando ao usuário:\n",
+        "#1. Se o usuário informar o valor de a igual a zero, a equação não é do\n",
+        "#segunda grau e o programa não deve fazer o pedido dos demais valores.\n",
+        "#2. Se o delta calculado for negativo, a equação não possui raizes reais.\n",
+        "#Informe ao usuário e encerre o programa.\n",
+        "#3. Se o delta for igual a zero informe que a equação possui apenas uma raiz\n",
+        "#real e informe a raiz ao usuário.\n",
+        "#4. Se o delta for positivo, a equação possui duas raizes reais, informe-as ao\n",
+        "#usuário.\n",
+        "\n",
+        "print('calculadora de raizesn de equação de segundo grau')\n",
+        "print('insira os valores da sua equação')\n",
+        "a = int(input('valor de a: '))\n",
+        "if a == 0:\n",
+        "  print('valor invalido')\n",
+        "else:\n",
+        "   b =  int(input('valor de b: '))\n",
+        "   c = int(input('valor de c'))\n",
+        "\n",
+        "x = ((b*b)-(4*a*c))\n",
+        "\n",
+        "if x < 0: print('a equação nao possui raizes reais')\n",
+        "elif x == 0: print(f'o valor da raiz é {(-b + x**0.5)/2*a}')\n",
+        "else:\n",
+        "    y = (-b + x**0.5)/2*a\n",
+        "    z = (-b - x**0.5)/2*a\n",
+        "    print(f'o valor da raiz 1 é {y} e p valor da raiz 2 é {z}')\n",
+        "\n",
+        "\n",
+        "\n",
+        "\n",
+        "\n"
+      ]
+    }
+  ]
+}
